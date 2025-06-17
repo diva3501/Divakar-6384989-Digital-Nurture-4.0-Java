@@ -1,0 +1,11 @@
+  Best Case:
+  - Linear: O(1) if element is first.
+  - Binary: O(1) if middle is the target.
+
+  Average Case:
+  - Linear: O(n/2) -> O(n)
+  - Binary: O(log n)
+ 
+  Worst Case:
+  - Linear: O(n)
+  - Binary: O(log n)

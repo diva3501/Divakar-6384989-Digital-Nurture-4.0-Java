@@ -1,0 +1,27 @@
+1. Linear Search
+
+Best Case (target is at start): O(1)
+
+Average Case: O(n)
+
+Worst Case (target at end or not present): O(n)
+
+Space Complexity: O(1) (no extra space used)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+2. Binary Search
+
+Precondition: Array must be sorted (Sorting = O(n log n))
+
+Best Case (target is at mid): O(1)
+
+Average Case: O(log n)
+
+Worst Case: O(log n)
+
+Space Complexity:
+
+Iterative Binary Search: O(1)
+
+Recursive Version: O(log n) (due to call stack)
