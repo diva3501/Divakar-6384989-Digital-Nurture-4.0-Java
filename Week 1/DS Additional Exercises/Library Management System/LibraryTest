@@ -1,0 +1,18 @@
+public class LibraryTest {
+    public static void main(String[] args) {
+        Book[] books = {
+            new Book(1, "The Alchemist", "Paulo Coelho"),
+            new Book(2, "The Hobbit", "J.R.R. Tolkien"),
+            new Book(3, "1984", "George Orwell"),
+            new Book(4, "Brave New World", "Aldous Huxley")
+        };
+
+        // Linear Search
+        Book found1 = LinearSearch.linearSearch(books, "The Hobbit");
+        System.out.println(found1 != null ? "Found (Linear): " + found1.title : "Not Found (Linear)");
+
+        // Binary Search
+        Book found2 = BinarySearch.binarySearch(books, "The Hobbit");
+        System.out.println(found2 != null ? "Found (Binary): " + found2.title : "Not Found (Binary)");
+    }
+}
