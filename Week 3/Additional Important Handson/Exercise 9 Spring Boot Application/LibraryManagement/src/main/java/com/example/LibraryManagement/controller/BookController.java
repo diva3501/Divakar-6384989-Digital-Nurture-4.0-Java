@@ -15,25 +15,25 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
 
-    // Create a new book
+    
     @PostMapping
     public Book createBook(@RequestBody Book book) {
         return bookRepository.save(book);
     }
 
-    // Get all books
+    
     @GetMapping
     public List<Book> getAllBooks() {
         return bookRepository.findAll();
     }
 
-    // Get book by ID
+    
     @GetMapping("/{id}")
     public Optional<Book> getBookById(@PathVariable Long id) {
         return bookRepository.findById(id);
     }
 
-    // Update book
+    
     @PutMapping("/{id}")
     public Book updateBook(@PathVariable Long id, @RequestBody Book updatedBook) {
         return bookRepository.findById(id).map(book -> {
@@ -47,7 +47,7 @@ public class BookController {
         });
     }
 
-    // Delete book
+    
     @DeleteMapping("/{id}")
     public void deleteBook(@PathVariable Long id) {
         bookRepository.deleteById(id);
